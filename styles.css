@@ -1,0 +1,207 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: white;
+}
+
+/* ================= HEADER ================= */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 700;
+    color: #00f2ff;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 30px;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+nav a:hover {
+    color: #00f2ff;
+}
+
+/* ================= SECTIONS ================= */
+
+section {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+/* ================= HOME ================= */
+
+.home {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-content h1 {
+    font-size: 55px;
+    font-weight: 700;
+}
+
+.home-content h3 {
+    font-size: 25px;
+    margin: 10px 0;
+}
+
+span {
+    color: #00f2ff;
+}
+
+.home-content p {
+    max-width: 600px;
+    margin: 20px auto;
+    line-height: 1.6;
+    color: #ddd;
+}
+
+/* Button */
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    background: #00f2ff;
+    color: black;
+    font-weight: 600;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.4s ease;
+    box-shadow: 0 0 20px #00f2ff80;
+}
+
+.btn:hover {
+    background: white;
+    transform: translateY(-5px);
+}
+
+/* ================= ABOUT ================= */
+
+.about {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    margin: 40px 10%;
+    padding: 60px 10%;
+    backdrop-filter: blur(10px);
+}
+
+.about h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.7;
+    color: #ddd;
+}
+
+/* ================= SKILLS ================= */
+
+.skills ul {
+    list-style: none;
+    margin-top: 30px;
+}
+
+.skills li {
+    margin: 12px 0;
+    font-size: 18px;
+    background: rgba(255, 255, 255, 0.08);
+    padding: 12px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.skills li:hover {
+    background: #00f2ff30;
+    transform: scale(1.05);
+}
+
+/* ================= EXPERIENCE ================= */
+
+.experience {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    margin: 40px 10%;
+    padding: 60px 10%;
+    backdrop-filter: blur(10px);
+}
+
+.experience h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.experience h3 {
+    margin-top: 20px;
+    color: #00f2ff;
+}
+
+.experience p {
+    max-width: 700px;
+    margin: 10px auto;
+    color: #ddd;
+    line-height: 1.6;
+}
+
+/* ================= CONTACT ================= */
+
+.contact p {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+/* ================= FOOTER ================= */
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: rgba(0, 0, 0, 0.4);
+    margin-top: 50px;
+    font-size: 14px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width: 768px) {
+    .home-content h1 {
+        font-size: 40px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    section {
+        padding: 60px 5%;
+    }
+}
